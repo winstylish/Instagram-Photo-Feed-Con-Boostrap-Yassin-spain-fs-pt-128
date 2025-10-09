@@ -1,0 +1,110 @@
+/* Setup */
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Post contenedor  */
+.post {
+  width: 420px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Header */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 10px;
+}
+.user { 
+  display: flex; 
+  align-items: 
+  center; gap: 10px; 
+}
+.user-icon { 
+  font-size: 24px; 
+}
+.user-text { 
+  line-height: 1.1; 
+  font-weight: 700; 
+}
+.user-text span { 
+  color: #777; 
+  font-weight: 400; 
+  font-size: 13px; 
+}
+
+/* Imagen */
+.post-img { 
+  position: relative; 
+}
+.post-img img { 
+  display: block; 
+  width: 100%; 
+  height: auto; 
+}
+
+/* Body */
+.post-body { 
+  padding-bottom: 14px; 
+}
+
+/* Barra de iconos */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-top: 1px solid #eee;
+  font-size: 22px;
+}
+
+.post-actions .left { 
+  display: flex; 
+  align-items: center; 
+  gap: 14px; 
+}
+
+/* Iconos */
+.post-actions i {
+  color: #111;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+.post-actions i:hover { 
+  transform: translateY(-1px); 
+  opacity: 0.9; 
+}
+
+/* Likes */
+.post-likes {
+  padding: 0 12px;
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+/* Descripcion */
+.post-desc {
+  padding: 0 12px 14px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+  max-height: 120px;
+  overflow: auto;
+}
+
+/* Font Awesome resets */
+.fa-brands, .fa-solid, .fa-regular { 
+  display: inline-block; 
+}

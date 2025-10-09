@@ -1,0 +1,95 @@
+/* Page setup */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #000;
+  min-height: 100vh;
+  display: flex;                /* center post */
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* Post container */
+.post {
+  width: 420px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  overflow: hidden;
+}
+
+/* Header (FLEX) */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user-icon { font-size: 24px; }
+.user-text { line-height: 1.1; font-weight: 500; }
+.user-text span { color: #777; font-weight: 400; font-size: 13px; }
+
+/* Imagen */
+.post-img { position: relative; }
+.post-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Like */
+.overlay-like {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,.5);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.post-img:hover .overlay-like { opacity: 1; }
+
+/* Actions */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  font-size: 22px;
+}
+.post-actions .left div { margin-right: 14px; }
+
+/* Likes */
+.post-likes {
+  padding: 0 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Description */
+.post-desc {
+  padding: 0 12px 14px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+  max-height: 120px;
+  overflow: auto; /* scroll if too long */
+}
+
+/* Font Awesome icons */
+.fa-brands, .fa-solid, .fa-regular {
+  display: inline-block;
+  cursor: pointer;
+}
+.post-actions div:hover,
+.overlay-like:hover {
+  transform: scale(1.05);
+}
