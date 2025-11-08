@@ -22,19 +22,26 @@
 </head>
 
 <body>
+  <!-- El navBar de Instagram con Bootstrap 5 -->
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <i class="fa-brands fa-instagram"></i>
-      <a class="navbar-brand" href="#">Instagram</a>
+      <i class="fa-brands fa-instagram fw-bold"></i>
+      <a class="navbar-brand fw-bold" href="#">Instagram</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <form class="d-flex ms-auto" role="search">
-          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@mdo">Create a post</button>
+
+          <!-- Button trigger del modal -->
+          <button type="button" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo">Create a new post here</button>
 
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -47,24 +54,17 @@
                 <div class="modal-body">
                   <form>
                     <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Recipient:</label>
+                      <label for="recipient-name" class="col-form-label">Caption:</label>
                       <input type="text" class="form-control" id="recipient-name">
                     </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
+
                   </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="btn-group">
+          <div class="btn-group ms-2">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
               data-bs-display="static" aria-expanded="false">
               <i class="fa-solid fa-gear"></i>
@@ -79,16 +79,39 @@
               </li>
               <li><a class="dropdown-item text-danger" href="#">Exit</a></li>
             </ul>
-
-
-
           </div>
+
 
 
         </form>
       </div>
     </div>
   </nav>
+
+  <div class="container-fluid">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+            class="fa-solid fa-grid"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+            class="fa-solid fa-square"></i></button>
+      </li>
+
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0"><img src="https://picsum.photos/id/1/20" alt="kekw"></div>
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">...</div>
+
+    </div>
+  </div>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-NXMBENP0W7EwDq1VufpCnA0Q6puVShGHEiJFBu8yBBE3xO2UCC08t6M5Q6m9K3OG"
