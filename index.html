@@ -47,19 +47,37 @@
             aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Caption:</label>
-                      <input type="text" class="form-control" id="recipient-name">
-                    </div>
 
-                  </form>
+                <div class="modal-header">
+
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
                 </div>
+
+                <div class="modal-body">
+
+                  <div class="mb-3">
+
+                    <label for="recipient-name" class="col-form-label">Caption:</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+
+                  </div>
+
+                  <button type="button btn mx-1 bg-light border" class="btn btn-outline-secondary"><i
+                      class="fa-solid fa-camera"></i></button>
+                  <button type="button btn mx-1 bg-light border" class="btn btn-outline-secondary"><i
+                      class="fa-solid fa-location-dot"></i></button>
+
+                </div>
+
+                <div class="modal-footer d-grid gap-2 d-md-flex justify-content-md-end mx-2 mb-2">
+
+                  <button class="btn btn-secondary" type="button">Close</button>
+                  <button class="btn btn-success" type="button">Publish</button>
+
+                </div>
+
               </div>
             </div>
           </div>
